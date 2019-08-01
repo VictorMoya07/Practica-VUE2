@@ -22,7 +22,7 @@
 
       <div :class="['alert', tarea.estado ? 'alert-success':'alert-danger']" role="alert">
         <div class="d-flex justify-content-between">
-          <div>{{index}} - {{tarea.nombre}} - {{tarea.estado}}</div>
+          <div>{{tarea.nombre}} - {{tarea.estado}}</div>
           <div>
             <button class="btn btn-success btn-sm" @click="editarTarea(index)">OK</button>
             <button class="btn btn-danger btn-sm "@click="eliminarTarea(index)">X</button>
